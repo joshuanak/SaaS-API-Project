@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Events Table</title>
+        <link rel="stylesheet" href="css/eventsStyles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <section class="main-content">
+            <span class="main-content__header">Admin Panel</span>
+            <div class="main-content__container">
+                <div class="main-content__form-container">
+                    <form class="main-content__form">
+                        <section class="form-group">
+                            <label for="date">Event Date:</label>
+                            <input type="text" id="date">
+                        </section>
+                        <section class="form-group">
+                            <label for="location">Location:</label>
+                            <input type="text" id="location">
+                        </section>
+                        <section class="form-group">
+                            <label for="genres">Genres:</label>
+                            <input type="text" id="genres">
+                        </section>
+                        <section class="form-group">
+                            <label for="requests">Special Requests:</label>
+                            <input type="text" id="requests">
+                        </section>
+                        <section class="form-group">
+                            <label for="equipment">Equipment provided?</label>
+                            <input type="checkbox" id="equipment">
+                        </section>
+                        <button type="submit">Add Event</button>
+                    </form>
+                </div>
+                <div class="main-content__event-container">
+                    <span class="events__header">Event Requests</span>
+                    <table id="events">
+                        <tr>
+                            <th>ID</th>
+                            <th>Date</th>
+                            <th>Location</th>
+                            <th>Genres</th>
+                            <th>Special Requests</th>
+                            <th>Equipment</th>
+                            <th>Edit</th>
+                            <th>Delete</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <script src="scripts/eventInteractions.js" type="module"></script>
+    </body>
+</html>
